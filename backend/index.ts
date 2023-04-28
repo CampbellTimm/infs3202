@@ -7,7 +7,8 @@ import { setupUserEnpoints } from "./src/rest/users";
 import { setupPostsEndpoint } from "./src/rest/posts";
 import {Express, Request, Response} from "express";
 
-const uiUrl =  'http://localhost:3000';
+const uiUrl = 'http://infs3202-s4479445.s3-website-ap-southeast-2.amazonaws.com';
+// const uiUrl = 'http://localhost:3000';
 
 const app = express();
 app.use(express.json());
