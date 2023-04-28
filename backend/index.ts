@@ -23,3 +23,5 @@ setupUserEnpoints(app);
 setupPostsEndpoint(app);
 
 app.listen(4000);
+
+console.log('Started')
