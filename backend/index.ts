@@ -5,6 +5,7 @@ import fileUpload from "express-fileupload";
 import cookieParser from "cookie-parser";
 import { setupUserEnpoints } from "./src/rest/users";
 import { setupPostsEndpoint } from "./src/rest/posts";
+import {Express, Request, Response} from "express";
 
 const uiUrl =  'http://localhost:3000';
 
@@ -22,6 +23,10 @@ app.use(
 setupUserEnpoints(app);
 setupPostsEndpoint(app);
 
-app.listen(4000);
+app.get('/', (request: Request, response: Response) => {
+  response.send("Good");
+});
+
+app.listen(80);
 
 console.log('Started')

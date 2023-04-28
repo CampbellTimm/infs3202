@@ -21,4 +21,8 @@ app.use(express_1.default.static(path_1.default.join(process.cwd(), 'public')));
 app.use((0, express_fileupload_1.default)({}));
 (0, users_1.setupUserEnpoints)(app);
 (0, posts_1.setupPostsEndpoint)(app);
-app.listen(4000);
+app.get('/', (request, response) => {
+    response.send("Good");
+});
+app.listen(80);
+console.log('Started');
