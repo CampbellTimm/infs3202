@@ -11,8 +11,8 @@ exports.cookieOptions = {
     maxAge: 1000 * 60 * 60,
     httpOnly: true,
     signed: true,
-    sameSite: 'none',
-    secure: false
+    // sameSite: 'none' as 'none',
+    // secure: false
 };
 const getFavourites = async (request, response) => {
     const { email } = request.params;
