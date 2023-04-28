@@ -8,7 +8,8 @@ export let cookieOptions = {
   maxAge: 1000 * 60 * 60,
   httpOnly: true, 
   signed: true,
-  sameSite: 'none' as 'none'
+  sameSite: 'none' as 'none',
+  secure: false
 }
 
 const getFavourites = async (request: Request, response: Response) => {
